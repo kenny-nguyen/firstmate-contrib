@@ -1,0 +1,151 @@
+=== base classify <sendend-result>
+feedback
+exit=0
+=== base answers <sendend-result>
+task-a	approve	Approve
+exit=0
+=== base reconciles <sendend-result>
+task-b	check the PR, again
+exit=0
+=== base read <sendend-result>
+SESSION-ENDING MESSAGE
+| Done, thanks.
+END SESSION-ENDING MESSAGE
+
+declared_items: 3
+presented_items: 3
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: true
+annotation_count: 2
+session_ending_message_count: 1
+
+ANNOTATIONS
+ANNOTATION 1 of 2
+element_uid: c1
+element_selector: #c1
+tag: choice
+text:
+| Approve
+ANNOTATION 2 of 2
+element_uid: c2
+element_selector: #c2
+tag: choice
+text:
+| Reconcile
+END ANNOTATIONS
+END LAVISH RESULT (3 of 3)
+exit=0
+=== fix classify <sendend-result>
+feedback
+exit=0
+=== fix answers <sendend-result>
+task-a	approve	Approve
+exit=0
+=== fix reconciles <sendend-result>
+task-b	check the PR, again
+exit=0
+=== fix read <sendend-result>
+SESSION-ENDING MESSAGE
+| Done, thanks.
+END SESSION-ENDING MESSAGE
+
+declared_items: 3
+presented_items: 3
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: true
+annotation_count: 2
+session_ending_message_count: 1
+
+ANNOTATIONS
+ANNOTATION 1 of 2
+element_uid: c1
+element_selector: #c1
+tag: choice
+text:
+| Approve
+ANNOTATION 2 of 2
+element_uid: c2
+element_selector: #c2
+tag: choice
+text:
+| Reconcile
+END ANNOTATIONS
+END LAVISH RESULT (3 of 3)
+exit=0
+=== base classify <sendend-list>
+feedback
+exit=0
+=== base answers <sendend-list>
+exit=0
+=== base reconciles <sendend-list>
+exit=0
+=== base read <sendend-list>
+SESSION-ENDING MESSAGE: (none)
+
+declared_items: 0
+presented_items: 0
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: true
+annotation_count: 0
+session_ending_message_count: 0
+
+ANNOTATIONS: (none)
+END LAVISH RESULT (0 of 0)
+exit=0
+=== fix classify <sendend-list>
+feedback
+exit=0
+=== fix answers <sendend-list>
+task-a	approve	Approve
+exit=0
+=== fix reconciles <sendend-list>
+task-b	check the PR, again
+exit=0
+=== fix read <sendend-list>
+SESSION-ENDING MESSAGE
+| Ship it.
+END SESSION-ENDING MESSAGE
+
+declared_items: 4
+presented_items: 4
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: true
+annotation_count: 3
+session_ending_message_count: 1
+
+ANNOTATIONS
+ANNOTATION 1 of 3
+element_uid: c1
+element_selector: #c1
+tag: choice
+text:
+| Approve
+ANNOTATION 2 of 3
+element_uid: c2
+element_selector: #c2
+tag: choice
+text:
+| Reconcile
+ANNOTATION 3 of 3
+element_uid: t1
+element_selector: td
+tag: td
+text:
+| cell
+prompt:
+| cell note
+detail:
+| target.type: table-cell
+| target.rowLabel: R1
+| target.columnLabel: C1
+END ANNOTATIONS
+END LAVISH RESULT (4 of 4)
+exit=0

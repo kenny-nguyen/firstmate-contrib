@@ -1,0 +1,157 @@
+=== base (29213a0) classify <cap1: real lavish-axi 0.1.67 poll output>
+feedback
+exit=0
+=== base (29213a0) read <cap1: real lavish-axi 0.1.67 poll output>
+SESSION-ENDING MESSAGE: (none)
+
+declared_items: 0
+presented_items: 0
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 0
+session_ending_message_count: 0
+
+ANNOTATIONS: (none)
+END LAVISH RESULT (0 of 0)
+exit=0
+=== base (29213a0) answers <cap1: real lavish-axi 0.1.67 poll output>
+exit=0
+=== base (29213a0) reconciles <cap1: real lavish-axi 0.1.67 poll output>
+exit=0
+=== head (60d8179) classify <cap1: real lavish-axi 0.1.67 poll output>
+feedback
+exit=0
+=== head (60d8179) read <cap1: real lavish-axi 0.1.67 poll output>
+CAPTAIN MESSAGE
+| Overall: simplify, please.
+END CAPTAIN MESSAGE
+
+declared_items: 5
+presented_items: 5
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 4
+session_ending_message_count: 1
+
+ANNOTATIONS
+ANNOTATION 1 of 4
+element_uid: 1
+element_selector: main > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
+tag: td
+text:
+| Researcher.
+prompt:
+| Mark this validation-needed: regulated, or not?
+detail:
+| target.type: table-cell
+| target.selector: main > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
+| target.rowLabel: N1
+| target.columnLabel: Recommendation
+| target.text: Researcher.
+ANNOTATION 2 of 4
+element_uid: 2
+element_selector: main > p
+tag: p
+text:
+| Plain text
+prompt:
+| Line one
+| line two, with comma
+ANNOTATION 3 of 4
+element_uid: 3
+element_selector: #q1
+tag: choice
+text:
+| Approve
+ANNOTATION 4 of 4
+element_uid: 4
+element_selector: #q2
+tag: choice
+text:
+| Reconcile
+END ANNOTATIONS
+END LAVISH RESULT (5 of 5)
+exit=0
+=== head (60d8179) answers <cap1: real lavish-axi 0.1.67 poll output>
+task-a	approve	Approve
+exit=0
+=== head (60d8179) reconciles <cap1: real lavish-axi 0.1.67 poll output>
+task-b	check the PR, again
+exit=0
+=== base (29213a0) classify <cap2: real lavish-axi 0.1.67 poll output>
+feedback
+exit=0
+=== base (29213a0) read <cap2: real lavish-axi 0.1.67 poll output>
+SESSION-ENDING MESSAGE: (none)
+
+declared_items: 0
+presented_items: 0
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: true
+annotation_count: 0
+session_ending_message_count: 0
+
+ANNOTATIONS: (none)
+END LAVISH RESULT (0 of 0)
+exit=0
+=== base (29213a0) answers <cap2: real lavish-axi 0.1.67 poll output>
+exit=0
+=== base (29213a0) reconciles <cap2: real lavish-axi 0.1.67 poll output>
+exit=0
+=== head (60d8179) classify <cap2: real lavish-axi 0.1.67 poll output>
+feedback
+exit=0
+=== head (60d8179) read <cap2: real lavish-axi 0.1.67 poll output>
+SESSION-ENDING MESSAGE
+| Ship it.
+END SESSION-ENDING MESSAGE
+
+declared_items: 4
+presented_items: 4
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: true
+annotation_count: 3
+session_ending_message_count: 1
+
+ANNOTATIONS
+ANNOTATION 1 of 3
+element_uid: c1
+element_selector: #q1
+tag: choice
+text:
+| Approve
+ANNOTATION 2 of 3
+element_uid: c2
+element_selector: #q2
+tag: choice
+text:
+| Reconcile
+ANNOTATION 3 of 3
+element_uid: t1
+element_selector: td
+tag: td
+text:
+| cell
+prompt:
+| cell note
+detail:
+| target.type: table-cell
+| target.rowLabel: R1
+| target.columnLabel: C1
+END ANNOTATIONS
+END LAVISH RESULT (4 of 4)
+exit=0
+=== head (60d8179) answers <cap2: real lavish-axi 0.1.67 poll output>
+task-a	approve	Approve
+exit=0
+=== head (60d8179) reconciles <cap2: real lavish-axi 0.1.67 poll output>
+task-b	check the PR, again
+exit=0

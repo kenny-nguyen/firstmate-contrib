@@ -1,0 +1,277 @@
+=== base answers <feedback-block>
+exit=0
+=== base reconciles <feedback-block>
+exit=0
+=== base read <feedback-block>
+SESSION-ENDING MESSAGE
+| Done, thanks.
+END SESSION-ENDING MESSAGE
+
+declared_items: 3
+presented_items: 3
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: true
+annotation_count: 2
+session_ending_message_count: 1
+
+ANNOTATIONS
+ANNOTATION 1 of 2
+element_uid: c1
+element_selector: #c1
+tag: choice
+text:
+| Approve
+ANNOTATION 2 of 2
+element_uid: c2
+element_selector: #c2
+tag: choice
+text:
+| Reconcile
+END ANNOTATIONS
+END LAVISH RESULT (3 of 3)
+exit=0
+=== fix answers <feedback-block>
+task-a	approve	Approve
+exit=0
+=== fix reconciles <feedback-block>
+task-b	check the PR, again
+exit=0
+=== fix read <feedback-block>
+SESSION-ENDING MESSAGE
+| Done, thanks.
+END SESSION-ENDING MESSAGE
+
+declared_items: 3
+presented_items: 3
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: true
+annotation_count: 2
+session_ending_message_count: 1
+
+ANNOTATIONS
+ANNOTATION 1 of 2
+element_uid: c1
+element_selector: #c1
+tag: choice
+text:
+| Approve
+ANNOTATION 2 of 2
+element_uid: c2
+element_selector: #c2
+tag: choice
+text:
+| Reconcile
+END ANNOTATIONS
+END LAVISH RESULT (3 of 3)
+exit=0
+=== base answers <truncated>
+exit=0
+=== base reconciles <truncated>
+exit=0
+=== base read <truncated>
+SESSION-ENDING MESSAGE: (none)
+
+declared_items: 0
+presented_items: 0
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 0
+session_ending_message_count: 0
+
+ANNOTATIONS: (none)
+END LAVISH RESULT (0 of 0)
+exit=0
+=== fix answers <truncated>
+exit=0
+=== fix reconciles <truncated>
+exit=0
+=== fix read <truncated>
+SESSION-ENDING MESSAGE: (none)
+
+declared_items: 5
+presented_items: 3
+malformed_items: 0
+complete: no
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 3
+session_ending_message_count: 0
+
+ANNOTATIONS
+ANNOTATION 1 of 3
+element_uid: 1
+element_selector: main > table > tbody > tr:nth-of-type(1) > td:nth-of-type(1)
+tag: td
+text:
+| Researcher.
+prompt:
+| Label this validation needed, then offer two paths: regulated, or not.
+detail:
+| target.type: table-cell
+| target.selector: main > table > tbody > tr:nth-of-type(1) > td:nth-of-type(1)
+| target.rowLabel: N1
+| target.columnLabel: Recommendation
+| target.text: Researcher.
+ANNOTATION 2 of 3
+element_uid: 3
+element_selector: main > p
+tag: p
+text:
+| Plain text
+prompt:
+| Line one
+| line two, with comma
+ANNOTATION 3 of 3
+element_uid: 4
+element_selector: 
+tag: 
+text:
+| Pick one.
+| 
+| Context data:
+| {
+|   "schema": "fm-bearings-answer.v1",
+|   "question": "task-a",
+|   "selection": "approve",
+|   "note": ""
+| }
+prompt:
+| Pick one.
+| 
+| Context data:
+| {
+|   "schema": "fm-bearings-answer.v1",
+|   "question": "task-a",
+|   "selection": "approve",
+|   "note": ""
+| }
+END ANNOTATIONS
+END LAVISH RESULT (3 of 5)
+exit=0
+=== base answers <corrupt>
+exit=0
+=== base reconciles <corrupt>
+exit=0
+=== base read <corrupt>
+SESSION-ENDING MESSAGE: (none)
+
+declared_items: 0
+presented_items: 0
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 0
+session_ending_message_count: 0
+
+ANNOTATIONS: (none)
+END LAVISH RESULT (0 of 0)
+exit=0
+=== fix answers <corrupt>
+task-a	approve	Approve
+exit=0
+=== fix reconciles <corrupt>
+task-b	check the PR, again
+exit=0
+=== fix read <corrupt>
+CAPTAIN MESSAGE
+| Overall: simplify, please.
+END CAPTAIN MESSAGE
+
+declared_items: 5
+presented_items: 4
+malformed_items: 1
+complete: no
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 3
+session_ending_message_count: 1
+
+ANNOTATIONS
+ANNOTATION 1 of 3
+element_uid: 1
+element_selector: main > table > tbody > tr:nth-of-type(1) > td:nth-of-type(1)
+tag: td
+text:
+| Researcher.
+prompt:
+| Label this validation needed, then offer two paths: regulated, or not.
+detail:
+| target.type: table-cell
+| target.selector: main > table > tbody > tr:nth-of-type(1) > td:nth-of-type(1)
+| target.rowLabel: N1
+| target.columnLabel: Recommendation
+| target.text: Researcher.
+ANNOTATION 2 of 3
+element_uid: 4
+element_selector: #q1
+tag: choice
+text:
+| Approve
+ANNOTATION 3 of 3
+element_uid: 5
+element_selector: #q2
+tag: choice
+text:
+| Reconcile
+END ANNOTATIONS
+MALFORMED ITEMS
+MALFORMED ITEM 1 of 1 (raw capture lines)
+|   - uid: "3"
+|     prompt: "Line one unterminated
+|     selector: main > p
+|     tag: p
+|     text: Plain text
+END MALFORMED ITEMS
+END LAVISH RESULT (4 of 5)
+exit=0
+=== base answers <unknown-shape>
+exit=0
+=== base reconciles <unknown-shape>
+exit=0
+=== base read <unknown-shape>
+SESSION-ENDING MESSAGE: (none)
+
+declared_items: 0
+presented_items: 0
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 0
+session_ending_message_count: 0
+
+ANNOTATIONS: (none)
+END LAVISH RESULT (0 of 0)
+exit=0
+=== fix answers <unknown-shape>
+exit=0
+=== fix reconciles <unknown-shape>
+exit=0
+=== fix read <unknown-shape>
+SESSION-ENDING MESSAGE: (none)
+
+declared_items: 2
+presented_items: 0
+malformed_items: 1
+complete: no
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 0
+session_ending_message_count: 0
+
+ANNOTATIONS: (none)
+MALFORMED ITEMS
+MALFORMED ITEM 1 of 1 (raw capture lines)
+| prompts[2|]{uid|prompt}:
+|   "1"|first
+|   "2"|second
+END MALFORMED ITEMS
+END LAVISH RESULT (0 of 2)
+exit=0

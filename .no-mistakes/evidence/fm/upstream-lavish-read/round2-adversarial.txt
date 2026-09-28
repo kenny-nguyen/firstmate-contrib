@@ -1,0 +1,168 @@
+=== base read <advA>
+SESSION-ENDING MESSAGE: (none)
+declared_items: 0
+presented_items: 0
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 0
+session_ending_message_count: 0
+ANNOTATIONS: (none)
+END LAVISH RESULT (0 of 0)
+exit=
+=== base answers <advA>
+exit=
+=== head read <advA>
+CAPTAIN MESSAGE
+| Overall: simplify, please.
+END CAPTAIN MESSAGE
+declared_items: 5
+presented_items: 4
+malformed_items: 1
+complete: no
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 3
+session_ending_message_count: 1
+ANNOTATIONS
+ANNOTATION 1 of 3
+element_uid: 1
+element_selector: main > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
+tag: td
+text:
+| Researcher.
+prompt:
+| Mark this validation-needed: regulated, or not?
+detail:
+| target.type: table-cell
+| target.selector: main > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
+| target.rowLabel: N1
+| target.columnLabel: Recommendation
+| target.text: Researcher.
+ANNOTATION 2 of 3
+element_uid: 2
+element_selector: main > p
+tag: p
+text:
+| Plain text
+prompt:
+| Line one
+| line two, with comma
+ANNOTATION 3 of 3
+element_uid: 4
+element_selector: #q2
+tag: choice
+text:
+| Reconcile
+END ANNOTATIONS
+MALFORMED ITEMS
+MALFORMED ITEM 1 of 1 (raw capture lines)
+|   - uid: "3"
+|     ???not toon at all
+END MALFORMED ITEMS
+END LAVISH RESULT (4 of 5)
+exit=
+=== head answers <advA>
+exit=
+=== base read <advB>
+SESSION-ENDING MESSAGE: (none)
+declared_items: 0
+presented_items: 0
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 0
+session_ending_message_count: 0
+ANNOTATIONS: (none)
+END LAVISH RESULT (0 of 0)
+exit=
+=== base answers <advB>
+exit=
+=== head read <advB>
+SESSION-ENDING MESSAGE: (none)
+declared_items: 2
+presented_items: 0
+malformed_items: 1
+complete: no
+lifecycle: feedback
+session_ended: (unset)
+annotation_count: 0
+session_ending_message_count: 0
+ANNOTATIONS: (none)
+MALFORMED ITEMS
+MALFORMED ITEM 1 of 1 (raw capture lines)
+| prompts[2]:: garbage
+|   whatever line
+|   another
+END MALFORMED ITEMS
+END LAVISH RESULT (0 of 2)
+exit=
+=== head answers <advB>
+exit=
+=== base read <advC>
+SESSION-ENDING MESSAGE
+| Done, thanks.
+END SESSION-ENDING MESSAGE
+declared_items: 3
+presented_items: 3
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: true
+annotation_count: 2
+session_ending_message_count: 1
+ANNOTATIONS
+ANNOTATION 1 of 2
+element_uid: c1
+element_selector: #q1
+tag: choice
+text:
+| Approve
+ANNOTATION 2 of 2
+element_uid: p1
+element_selector: main > p
+tag: p
+text:
+| Plain text
+prompt:
+| tighten, this wording
+END ANNOTATIONS
+END LAVISH RESULT (3 of 3)
+exit=
+=== base answers <advC>
+exit=
+=== head read <advC>
+SESSION-ENDING MESSAGE
+| Done, thanks.
+END SESSION-ENDING MESSAGE
+declared_items: 3
+presented_items: 3
+malformed_items: 0
+complete: yes
+lifecycle: feedback
+session_ended: true
+annotation_count: 2
+session_ending_message_count: 1
+ANNOTATIONS
+ANNOTATION 1 of 2
+element_uid: c1
+element_selector: #q1
+tag: choice
+text:
+| Approve
+ANNOTATION 2 of 2
+element_uid: p1
+element_selector: main > p
+tag: p
+text:
+| Plain text
+prompt:
+| tighten, this wording
+END ANNOTATIONS
+END LAVISH RESULT (3 of 3)
+exit=
+=== head answers <advC>
+task-a	approve	Approve
+exit=

@@ -1,0 +1,32 @@
+session:
+  file: /private/var/folders/4h/crwd6dx973qgbps5vsb6sflc0000gp/T/lavish-lab.JdWXwx/art/review.html
+  status: feedback
+  session_ended: true
+  ended_by: user
+prompts[4]:
+  - uid: c1
+    prompt: "Pick.\n\nContext data:\n{\n  \"schema\": \"fm-bearings-answer.v1\",\n  \"question\": \"task-a\",\n  \"selection\": \"approve\",\n  \"note\": \"\"\n}"
+    selector: #q1
+    tag: choice
+    text: Approve
+  - uid: c2
+    prompt: "Pick.\n\nContext data:\n{\n  \"schema\": \"fm-bearings-answer.v1\",\n  \"question\": \"task-b\",\n  \"selection\": \"reconcile\",\n  \"note\": \"check the PR, again\"\n}"
+    selector: #q2
+    tag: choice
+    text: Reconcile
+  - uid: t1
+    prompt: cell note
+    selector: td
+    tag: td
+    text: cell
+    target:
+      type: table-cell
+      rowLabel: R1
+      columnLabel: C1
+  - uid: ""
+    prompt: Ship it.
+    selector: ""
+    tag: message
+    text: ""
+next_step: This was the last feedback before the user ended the session. Stop polling /private/var/folders/4h/crwd6dx973qgbps5vsb6sflc0000gp/T/lavish-lab.JdWXwx/art/review.html and do not reopen it - deliver any remaining updates directly in this conversation instead. Only run `lavish-axi /private/var/folders/4h/crwd6dx973qgbps5vsb6sflc0000gp/T/lavish-lab.JdWXwx/art/review.html --reopen` if the user explicitly asks for further review or something genuinely important needs their visual attention.
+dom_snapshot: ""
